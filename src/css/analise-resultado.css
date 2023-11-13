@@ -1,0 +1,26 @@
+.img{
+    text-align: center;
+}
+
+.botoesResul{
+    text-align: center;
+}
+
+.botaoResul{
+    width: 90%;
+    height: 50px;
+
+    border: solid 2px black;
+    border-radius: 8px;
+
+    background-color: #599191ff;
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+.botaoResul:hover{
+    background-color: black;
+
+    cursor: pointer;
+}
