@@ -1,104 +1,134 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+  <html lang="pt-br">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="../src/css/login-cadastro.css" />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous"
+      />
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"
+        defer
+      ></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/css/login-cadastro.css">
-    <title>Tela de cadastro</title>
-</head>
+      <link
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet"
+      />
 
-<body>
-    <div class="container">
-        <div class="form-image1">
-            <img src="../images/undraw_sign_up_n6im.svg" alt="" width="590">
+      <title>Criar Nova Conta - Maeph Solution</title>
+    </head>
+
+    <body>
+      <section class="vh-100">
+        <div class="container-fluid h-custom">
+          <div
+            class="row d-flex justify-content-center align-items-center h-100"
+          >
+            <div class="col-md-9 col-lg-6 col-xl-5">
+              <img
+                src="../images/LogoApp.PNG"
+                class="img-fluid"
+                alt="Maeph Solution Logo"
+              />
+            </div>
+            <div class="form-box col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+              <form>
+                <div
+                  class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start"
+                >
+                  <p class="lead fw-normal mb-0 me-3">Entrar com</p>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-floating mx-1"
+                  >
+                    <i class="bx bxl-google"></i>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-floating mx-1"
+                  >
+                    <i class="bx bxl-facebook"></i>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-floating mx-1"
+                  >
+                    <i class="bx bxl-twitter"></i>
+                  </button>
+                </div>
+
+                <div class="divider d-flex align-items-center my-4">
+                  <p class="text-center fw-bold mx-3 mb-0">Ou</p>
+                </div>
+
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input
+                    type="text"
+                    id="form3Example3"
+                    class="form-control form-control-lg"
+                    placeholder="Digite seu nome de usuário"
+                  />
+                  <label class="form-label" for="form3Example3">Usuário</label>
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-3">
+                  <input
+                    type="password"
+                    id="form3Example4"
+                    class="form-control form-control-lg"
+                    placeholder="Digite sua senha"
+                  />
+                  <label class="form-label" for="form3Example4">Senha</label>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <!-- Checkbox -->
+                  <div class="form-check mb-0">
+                    <input
+                      class="form-check-input me-2"
+                      type="checkbox"
+                      value=""
+                      id="form2Example3"
+                    />
+                    <label class="form-check-label" for="form2Example3">
+                      Lembre-se de mim
+                    </label>
+                  </div>
+                  <a href="rec-senha.html" class="text-body"
+                    >Esqueceu a senha?</a
+                  >
+                </div>
+
+                <div class="text-center text-lg-start mt-4 pt-2">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg"
+                    style="padding-left: 2.5rem; padding-right: 2.5rem"
+                  >
+                    Login
+                  </button>
+                  <p class="small fw-bold mt-2 pt-1 mb-0">
+                    Não tem uma conta?
+                    <a href="#!" class="link-danger">Cadastre-se</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-        <div class="form">
-                <div class="form-header">
-                    <div class="title">
-                        <h1>Cadastre-se</h1>
-                    </div>
-                    <div class="login-button">
-                        <button><a href="../pages/login.html">Já tem login?</a></button>
-                    </div>
-                </div>
-               
-
-                <div class="input-group1">
-                    <div class="input-box">
-                        <label for="firstname">Nome da empresa</label>
-                        <input id="firstname" type="text" name="firstname" placeholder="Digite o nome da empresa" required>
-                    </div>
-
-                  
-                    <div class="input-box">
-                        <label for="email">E-mail</label>
-                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="number">CNPJ</label>
-                        <input id="number" type="tel" name="number" placeholder="xx.xxx.xxx/xxxx-xx" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="password">Cidade</label>
-                        <input id="password" type="password" name="password" placeholder="Informe sua cidade" required>
-                    </div>
-
-
-                    <div class="input-box">
-                        <label for="confirmPassword">Endereço</label>
-                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Informe seu endereço" required>
-                    </div>
-
-                </div>
-
-                
-
-                <div class="gender-inputs">
-                    <div class="uf-box">
-                        <h6>estado</h6>
-                        <select id="UF" name="UF">
-                            <option value="">Selecione</option>
-                            <option value="AC">AC</option>
-                            <option value="AL">AL</option>
-                            <option value="AP">AP</option>
-                            <option value="AM">AM</option>
-                            <option value="BA">BA</option>
-                            <option value="CE">CE</option>
-                            <option value="DF">DF</option>
-                            <option value="ES">ES</option>
-                            <option value="GO">GO</option>
-                            <option value="MA">MA</option>
-                            <option value="MS">MS</option>
-                            <option value="MT">MT</option>
-                            <option value="MG">MG</option>
-                            <option value="PA">PA</option>
-                            <option value="PB">PB</option>
-                            <option value="PR">PR</option>
-                            <option value="PE">PE</option>
-                            <option value="PI">PI</option>
-                            <option value="RJ">RJ</option>
-                            <option value="RN">RN</option>
-                            <option value="RS">RS</option>
-                            <option value="RO">RO</option>
-                            <option value="RR">RR</option>
-                            <option value="SC">SC</option>
-                            <option value="SP">SP</option>
-                            <option value="SE">SE</option>
-                            <option value="TO">TO</option>
-                         </select>
-                    </div>
-
-                </div>
-
-                <div class="continue-button">
-                    <button><a href="../index.html">Continuar</a> </button>
-                </div>
-        </div>
-    </div>
-</body>
-
+      </section>
+    </body>
+  </html>
 </html>
