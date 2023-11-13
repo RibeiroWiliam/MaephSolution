@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    background: #EEFFD9;
+    overflow-y: hidden;
+}
+
+
+.text-box {
+    margin-top: 80%;
+    border-radius: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 100px;
+}
+
+.text-box h1 {
+    color: #000000;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 99vh;
+    justify-content: left;
+    width: 80%;
+    padding: 0% 5% 0% 8%;
+    background-color: #ffffff;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+
+
+h1 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #3c7e36;
+}
+
+
+.user-box input {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 1px solid rgb(133, 131, 131);
+    background-color: transparent;
+    margin-bottom: 10px;
+    outline: none;
+    min-width: 180px;
+    font-size: 20px;
+    transition: all .3s ease-out;
+    cursor: pointer;
+
+}
+
+.user-box {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.user-box input:focus {
+    border-bottom: 1px solid #3c7e36;
+}
+
+.user-box label {
+    color: #000;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.user-box input:focus+label,
+.user-box input:valid+label {
+    font-size: 13px;
+    margin-top: 0;
+    color: #3c7e36;
+}
+
+a {
+    background-color: #3c7e36;
+    color: #FFFF;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    height: 50px;
+    font-size: 18pt;
+    border: transparent;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    
+}
+
+button:hover {
+    background-color: #EEFFD9;
+    transition: all .3s ease-out;
+    color: #3c7e36;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    padding: 15%;
+    
+}
+
+
+
+.fa-user-o {
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    color: rgb(80, 75, 75);
+}
