@@ -76,7 +76,7 @@
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item active" href="senso-higiene.html"
+                  <a class="dropdown-item" href="senso-higiene.html"
                     >Senso de Higiene</a
                   >
                 </li>
@@ -93,7 +93,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="analisederesultado.html"
+              <a class="nav-link active" href="#"
                 >Análise de Resultados</a
               >
             </li>
@@ -132,24 +132,24 @@
               Nível Verde: (E) maior ou igual a 20 pontos e (I) igual a zero
             </td>
             <td>Total da coluna:</td>
-            <td>
-              <input type="checkbox" />
+            <td contenteditable="" id="col-i">
+              
             </td>
-            <td>
-              <input type="checkbox" />
+            <td contenteditable="">
+              
             </td>
-            <td>
-              <input type="checkbox" />
+            <td contenteditable="">
+              
             </td>
-            <td>
-              <input type="checkbox" />
+            <td contenteditable="">
+              
             </td>
           </tr>
           <tr>
             <td>Nível Azul: (E)+(B) maior oui igual a 18 pontos</td>
             <td>Total de (I+R) e (B+E):</td>
-            <td colspan="2">(I+R):</td>
-            <td colspan="2">(B+E):</td>
+            <td contenteditable="" colspan="2">(I+R):</td>
+            <td contenteditable="" colspan="2">(B+E):</td>
           </tr>
           <tr>
             <td>Nível Vermelho: (I)+(R) maior ou igual a 10 pontos</td>
@@ -167,10 +167,13 @@
       </table>
     </div>
     <div class="img">
-      <img src="../images/grafico.png" />
+      <img src="../images/image.png" />
     </div>
     <div class="botoesResul">
-      <button class="botaoResul" type="submit">Retornar tela de rotinas</button>
+      <a href="../index.html">
+        <button class="botaoResul" type="submit">Retornar tela de rotinas</button>
+      </a>
     </div>
+    <script src="../src/js/dados.js"></script>
   </body>
 </html>

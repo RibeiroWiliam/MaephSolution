@@ -1,251 +1,192 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="../src/css/sensos-padrao.css" />
-    <link rel="stylesheet" href="../src/css/styles.css" />
-    <title>Senso de Higiene - Maeph Solution</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">
-          <img
-            src="../images/logo.PNG"
-            width="45"
-            height="45"
-            class="d-inline-block align-top"
-            alt=""
-          />
-          <div>Maeph Solution</div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../src/css/sensos-padrao.css" />
+  <link rel="stylesheet" href="../src/css/styles.css" />
+  <title>Senso de Higiene - Maeph Solution</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../images/logo.PNG" width="45" height="45" class="d-inline-block align-top" alt="" />
+        <div>Maeph Solution</div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Lançamento das Evidências
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="senso-selecao.html">Senso de Seleção</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="senso-ordenacao.html">Senso de Ordenação</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="senso-limpeza.html">Senso de Limpeza</a>
+              </li>
+              <li>
+                <a class="dropdown-item active" href="senso-higiene.html">Senso de Higiene</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="senso-autodisciplina.html">Senso de Autodisciplina</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cadastroEvidencias.html">Cadastro de Evidências</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="analisederesultado.html">Análise de Resultados</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="main">
+      <table class="table table-striped table-bordered border-dark">
+        <thead>
+          <tr>
+            <th style="background-color: #7b3232; color: white" scope="col">
+              #
+            </th>
+            <th style="background-color: #7b3232; color: white" scope="col">
+              SENSO DE HIGIENE
+            </th>
+            <th style="background-color: #7b3232; color: white" scope="col">
+              I
+            </th>
+            <th style="background-color: #7b3232; color: white" scope="col">
+              R
+            </th>
+            <th style="background-color: #7b3232; color: white" scope="col">
+              B
+            </th>
+            <th style="background-color: #7b3232; color: white" scope="col">
+              E
+            </th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <th scope="row">1</th>
+            <td>
+              Se há problema de relacionamento, a equipe toma a inciativa para
+              uma reaproximção?
+            </td>
+            <td contenteditable class="i">
+            </td>
+            <td contenteditable class="r">
+            </td>
+            <td contenteditable class="b">
+            </td>
+            <td contenteditable class="e">
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>
+              Existe espirito de boa vontade para coloborar em suas áreas com
+              as outras?
+            </td>
+            <td contenteditable class="i">
+            </td>
+            <td contenteditable class="r">
+            </td>
+            <td contenteditable class="b">
+            </td>
+            <td contenteditable class="e">
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>
+              A equipe segue os procedimentos de segurança e usa os
+              equipamentos conforme as normas?
+            </td>
+            <td contenteditable class="i">
+            </td>
+            <td contenteditable class="r">
+            </td>
+            <td contenteditable class="b">
+            </td>
+            <td contenteditable class="e">
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>
+              Todos os materiais inflamáveis e outros perigosos são
+              acondicionados corretamente?
+            </td>
+            <td contenteditable class="i">
+            </td>
+            <td contenteditable class="r">
+            </td>
+            <td contenteditable class="b">
+            </td>
+            <td contenteditable class="e">
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>
+              AS normas que limitam o uso do cigarro dentro da empresa são
+              seguidas?
+            </td>
+            <td contenteditable class="i">
+            </td>
+            <td contenteditable class="r">
+            </td>
+            <td contenteditable class="b">
+            </td>
+            <td contenteditable class="e">
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>
+              Os exames médicos periódicos são realizados, e todos seguem as
+              recomendações?
+            </td>
+            <td contenteditable class="i">
+            </td>
+            <td contenteditable class="r">
+            </td>
+            <td contenteditable class="b">
+            </td>
+            <td contenteditable class="e">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="botoes">
+        <a href="../index.html">
+          <button>CONFIRMAR</button>
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown active">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Lançamento das Evidências
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="senso-selecao.html"
-                    >Senso de Seleção</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="senso-ordenacao.html"
-                    >Senso de Ordenação</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="senso-limpeza.html"
-                    >Senso de Limpeza</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item active" href="senso-higiene.html">Senso de Higiene</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="senso-autodisciplina.html"
-                    >Senso de Autodisciplina</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="cadastroEvidencias.html"
-                >Cadastro de Evidências</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="analisederesultado.html"
-                >Análise de Resultados</a
-              >
-            </li>
-          </ul>
-        </div>
       </div>
-    </nav>
-    <main>
-      <div class="main">
-        <table class="table table-striped table-bordered border-dark">
-          <thead>
-            <tr>
-              <th style="background-color: #7b3232; color: white" scope="col">
-                #
-              </th>
-              <th style="background-color: #7b3232; color: white" scope="col">
-                SENSO DE HIGIENE
-              </th>
-              <th style="background-color: #7b3232; color: white" scope="col">
-                I
-              </th>
-              <th style="background-color: #7b3232; color: white" scope="col">
-                R
-              </th>
-              <th style="background-color: #7b3232; color: white" scope="col">
-                B
-              </th>
-              <th style="background-color: #7b3232; color: white" scope="col">
-                E
-              </th>
-            </tr>
-          </thead>
-          <tbody class="table-group-divider">
-            <tr>
-              <th scope="row">1</th>
-              <td>
-                Se há problema de relacionamento, a equipe toma a inciativa para
-                uma reaproximção?
-              </td>
-              <td>
-                <input type="radio" name="opcoes1" />
-              </td>
-              <td>
-                <input type="radio" name="opcoes1" />
-              </td>
-              <td>
-                <input type="radio" name="opcoes1" />
-              </td>
-              <td>
-                <input type="radio" name="opcoes1" />
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>
-                Existe espirito de boa vontade para coloborar em suas áreas com
-                as outras?
-              </td>
-              <td>
-                <input type="radio" name="opcoes2" />
-              </td>
-              <td>
-                <input type="radio" name="opcoes2" />
-              </td>
-              <td>
-                <input type="radio" name="opcoes2" />
-              </td>
-              <td>
-                <input type="radio" name="opcoes2" />
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>
-                A equipe segue os procedimentos de segurança e usa os
-                equipamentos conforme as normas?
-              </td>
-              <td>
-                <input type="radio" name="opcoes3" />
-              </td>
-              <td>
-                <input type="radio" name="opcoes3" />
-              </td>
-              <td>
-                <input type="radio" name="opcoes3" />
-              </td>
-              <td>
-                <input type="radio" name="opcoes3" />
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>
-                Todos os materiais inflamáveis e outros perigosos são
-                acondicionados corretamente?
-              </td>
-              <td>
-                <input type="radio" name="opcoes4" />
-              </td>
-              <td>
-                <input type="radio" name="opcoes4" />
-              </td>
-              <td>
-                <input type="radio" name="opcoes4" />
-              </td>
-              <td>
-                <input type="radio" name="opcoes4" />
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">5</th>
-              <td>
-                AS normas que limitam o uso do cigarro dentro da empresa são
-                seguidas?
-              </td>
-              <td>
-                <input type="radio" name="opcoes5" />
-              </td>
-              <td>
-                <input type="radio" name="opcoes5" />
-              </td>
-              <td>
-                <input type="radio" name="opcoes5" />
-              </td>
-              <td>
-                <input type="radio" name="opcoes5" />
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">6</th>
-              <td>
-                Os exames médicos periódicos são realizados, e todos seguem as
-                recomendações?
-              </td>
-              <td>
-                <input type="radio" name="opcoes6" />
-              </td>
-              <td>
-                <input type="radio" name="opcoes6" />
-              </td>
-              <td>
-                <input type="radio" name="opcoes6" />
-              </td>
-              <td>
-                <input type="radio" name="opcoes6" />
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="botoes">
-          <a href="../index.html">
-            <button>CONFIRMAR</button>
-          </a>
-        </div>
-      </div>
-    </main>
-  </body>
+    </div>
+  </main>
+</body>
+
 </html>

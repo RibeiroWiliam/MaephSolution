@@ -36,3 +36,30 @@ height: calc(100% - 73px);
 height: 100%;
 }
 }
+
+.labels{
+    margin-bottom: 10px;
+}
+
+.labels i{
+    font-size: 40px;
+    color: #6b9637;
+}
+
+.div-buttons .link{
+    font-size: 20px;
+    padding-right: 2.5rem;
+    color: #6b9637;
+}
+
+.div-buttons .link:hover{
+    text-decoration: underline;
+}
+
+.div-buttons .link:active{
+    border: none;
+}
+
+.div-buttons .link i{
+    margin-right: 5px;
+}
